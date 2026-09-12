@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tideline</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      (function () {
+        var path = location.pathname + location.search;
+        var hash = location.hash || "";
+        if (hash.indexOf("#/") === 0) return;
+        location.replace("/#" + (path === "/" ? "/" : path) + (hash ? hash : ""));
+      })();
+    </script>
+    <meta http-equiv="refresh" content="0; url=/" />
+  </head>
+  <body>
+    <p><a href="/">Tideline</a></p>
+  </body>
+</html>
