@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { RankBars, SentimentTrend, VolumeChart } from "@/components/charts/charts";
 import { MentionList } from "@/components/feed/mentions";
+import { MoiraDigestCard } from "@/components/helix/moira-digest";
 import { KpiStrip } from "@/components/kpis";
 import { AppShell, PageHeader } from "@/components/layout/app-shell";
 import { TopicPills } from "@/components/layout/filters";
@@ -32,6 +33,10 @@ function Overview() {
         }
       />
       <TopicPills />
+
+      <div className="mt-6">
+        <MoiraDigestCard variant="teaser" />
+      </div>
 
       <div className="mt-6">
         <KpiStrip kpis={snap.kpis} />
