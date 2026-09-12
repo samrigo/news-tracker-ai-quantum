@@ -12,7 +12,7 @@ Push to `main` deploys via `.github/workflows/pages.yml`.
 
 Site URL: `https://samrigo.github.io/news-tracker-ai-quantum/`
 
-Hash routes: `/#/media`, `/#/social`, `/#/visibility`, `/#/policy`, `/#/markets`, `/#/signals`.
+Routes: `/media`, `/social`, `/visibility`, `/policy`, `/markets`, `/signals`. Deep links work because the build copies `index.html` to `404.html`.
 
 If the first Actions run fails on Pages permissions:
 
